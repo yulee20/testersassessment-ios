@@ -22,13 +22,11 @@ class CurrencyHelper {
     }
     
     static func attributify(amount: String) -> NSMutableAttributedString {
-        
         let font: UIFont? = UIFont(name: "Helvetica", size: regularSize)
         let fontSuper: UIFont? = UIFont(name: "Helvetica", size: superscriptSize)
         let attString: NSMutableAttributedString = NSMutableAttributedString(string: amount, attributes: [.font:font!])
         
         attString.setAttributes([.font:fontSuper!,.baselineOffset: (regularSize - superscriptSize) - diff], range: NSRange(location: (amount.count - decimalCount), length: decimalCount))
-        
         return attString
     }
 }

@@ -1,3 +1,39 @@
+# What was done:
+
+iOS Deployment Target was changed to 17.0
+
+ViewController
+* Added accessibility ID for Button element
+* Changed type - Float to Int in `generate` function
+
+ReferenceiOSTests
+- Added unit test `testAttributifyStringDoesNotModifyContent()` (more tests can be created using snapshot testing)
+
+Added folder `helpers` with following extensions for String and Array + Formatter
+- StringExtension has two extensions: `toCurrency()` and `isCurrency`
+- ArrayExtension has `areAllElementsUnique()` extension
+- Formatter with `currencyFormatter` method
+
+Created Page Object for home screen - `HomeScreenLocator` with locators and one method
+
+ReferenceiOSUITests
+- Added function `tearDown()` to terminate the app after each test
+- Added next UI tests:
+    - testViewControllerInitialization
+    - testGenerateValue
+    - testIsValidCurrency
+    - testIsPositiveValue
+    - testIsCurrencyFormatEuro
+    - testGenerateUniqueValues
+
+Added method `testAccessibilityAudits` - to automatically perform accessibility audits on the app through UI tests as the app should be accessible for everyone.
+
+The result is:
+- AccessibilityAuditsUITests.swift:20: Dynamic Type font sizes are unsupported
+- AccessibilityAuditsUITests.swift:20: Dynamic Type font sizes are unsupported
+- AccessibilityAuditsUITests.swift:20: Label duplicates traits
+
+
 # Test assignment
 
 We are looking for Automation Engineers that have the mindset "only the sky is the limit" and "automation doesn't stop at testing, it's just a beginning!" ;)

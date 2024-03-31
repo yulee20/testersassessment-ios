@@ -30,5 +30,20 @@ class CurrencyHelperTests: XCTestCase {
         
         XCTAssertEqual(result, "€ 122,50")
     }
+    
+    // Unit Test to check 'attributify()' function
+    // It can be verified using snapshot testing
+    
+    func testAttributifyStringDoesNotModifyContent() {
+        let number = "€ 52.033.135,00"
+        
+        let expectedResult = NSMutableAttributedString(string: number, attributes: [.font: UIFont(name: "Helvetica", size: 18)!])
+        expectedResult.setAttributes([.font:UIFont(name: "Helvetica", size: 13)!,.baselineOffset: 3], range: NSRange(location: (number.count - 2), length: 2))
+        
+        let actualResult = CurrencyHelper.attributify(amount: number)
+        
+        XCTAssertEqual(actualResult.string, expectedResult.string)
+    }
+    
 }
 

@@ -15,11 +15,18 @@ class ViewController: UIViewController {
             label.accessibilityIdentifier = "label"
         }
     }
-    @IBOutlet weak var button: UIButton!
+    
+    // Added accessibility ID for Button
+    @IBOutlet weak var button: UIButton!{
+        didSet {
+            button.accessibilityIdentifier = "button"
+        }
+    }
 
     @IBAction func generate(_ sender: Any) {
         // Generate amount
-        let amount = Float.random(in: 100 ..< 99999999)
+        // There was a syntax error; changed Float to Int
+        let amount = Int.random(in: 100 ..< 99999999)
 
         // Format
         if let formattedAmount = CurrencyHelper.format(amount: amount as NSNumber) {

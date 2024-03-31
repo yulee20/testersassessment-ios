@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,11 @@
 		05D03C8A224BA0FD005F6F05 /* ReferenceiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D03C89224BA0FD005F6F05 /* ReferenceiOSUITests.swift */; };
 		05D03C98224BBCCC005F6F05 /* CurrencyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D03C97224BBCCC005F6F05 /* CurrencyHelper.swift */; };
 		05D03C9A224BBDC2005F6F05 /* CurrencyHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D03C99224BBDC2005F6F05 /* CurrencyHelperTests.swift */; };
+		886E19612BB4C6B5009CEF24 /* HomeScreenLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886E19602BB4C6B5009CEF24 /* HomeScreenLocator.swift */; };
+		886E19642BB9BCCA009CEF24 /* AccessibilityAuditsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886E19632BB9BCCA009CEF24 /* AccessibilityAuditsUITests.swift */; };
+		886E19732BB9CF71009CEF24 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886E19722BB9CF71009CEF24 /* StringExtension.swift */; };
+		886E19752BB9CF80009CEF24 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886E19742BB9CF80009CEF24 /* ArrayExtension.swift */; };
+		886E19772BB9DE77009CEF24 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886E19762BB9DE77009CEF24 /* Formatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		05D03C8B224BA0FD005F6F05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05D03C97224BBCCC005F6F05 /* CurrencyHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyHelper.swift; sourceTree = "<group>"; };
 		05D03C99224BBDC2005F6F05 /* CurrencyHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyHelperTests.swift; sourceTree = "<group>"; };
+		886E19602BB4C6B5009CEF24 /* HomeScreenLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenLocator.swift; sourceTree = "<group>"; };
+		886E19632BB9BCCA009CEF24 /* AccessibilityAuditsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityAuditsUITests.swift; sourceTree = "<group>"; };
+		886E19722BB9CF71009CEF24 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		886E19742BB9CF80009CEF24 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		886E19762BB9DE77009CEF24 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,10 +132,31 @@
 		05D03C88224BA0FD005F6F05 /* ReferenceiOSUITests */ = {
 			isa = PBXGroup;
 			children = (
+				886E19712BB9CF50009CEF24 /* helpers */,
+				886E195F2BB4C68B009CEF24 /* screens */,
 				05D03C89224BA0FD005F6F05 /* ReferenceiOSUITests.swift */,
 				05D03C8B224BA0FD005F6F05 /* Info.plist */,
+				886E19632BB9BCCA009CEF24 /* AccessibilityAuditsUITests.swift */,
 			);
 			path = ReferenceiOSUITests;
+			sourceTree = "<group>";
+		};
+		886E195F2BB4C68B009CEF24 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				886E19602BB4C6B5009CEF24 /* HomeScreenLocator.swift */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		886E19712BB9CF50009CEF24 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				886E19722BB9CF71009CEF24 /* StringExtension.swift */,
+				886E19742BB9CF80009CEF24 /* ArrayExtension.swift */,
+				886E19762BB9DE77009CEF24 /* Formatter.swift */,
+			);
+			path = helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,19 +221,23 @@
 		05D03C5E224BA0FB005F6F05 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1530;
 				ORGANIZATIONNAME = "ABN AMRO";
 				TargetAttributes = {
 					05D03C65224BA0FB005F6F05 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1530;
 					};
 					05D03C79224BA0FD005F6F05 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1530;
 						TestTargetID = 05D03C65224BA0FB005F6F05;
 					};
 					05D03C84224BA0FD005F6F05 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1530;
 						TestTargetID = 05D03C65224BA0FB005F6F05;
 					};
 				};
@@ -277,7 +312,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				886E19772BB9DE77009CEF24 /* Formatter.swift in Sources */,
+				886E19752BB9CF80009CEF24 /* ArrayExtension.swift in Sources */,
+				886E19732BB9CF71009CEF24 /* StringExtension.swift in Sources */,
 				05D03C8A224BA0FD005F6F05 /* ReferenceiOSUITests.swift in Sources */,
+				886E19642BB9BCCA009CEF24 /* AccessibilityAuditsUITests.swift in Sources */,
+				886E19612BB4C6B5009CEF24 /* HomeScreenLocator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +382,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -353,6 +394,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -367,7 +409,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -403,6 +445,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -414,6 +457,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -422,7 +466,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -446,7 +490,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.abnamro.ReferenceiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.abnamro.ReferenceiOS";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -466,7 +510,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.abnamro.ReferenceiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match InHouse com.abnamro.ReferenceiOS";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -486,7 +530,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.abnamro.ReferenceiOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReferenceiOS.app/ReferenceiOS";
 			};
@@ -507,7 +551,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.abnamro.ReferenceiOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReferenceiOS.app/ReferenceiOS";
 			};
@@ -527,7 +571,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.abnamro.ReferenceiOSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = ReferenceiOS;
 			};
@@ -547,7 +591,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.abnamro.ReferenceiOSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = ReferenceiOS;
 			};
@@ -579,6 +623,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -590,6 +635,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -598,7 +644,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -623,7 +669,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.abnamro.ReferenceiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match InHouse com.abnamro.ReferenceiOS";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Enterprise;
@@ -643,7 +689,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.abnamro.ReferenceiOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReferenceiOS.app/ReferenceiOS";
 			};
@@ -663,7 +709,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.abnamro.ReferenceiOSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = ReferenceiOS;
 			};
